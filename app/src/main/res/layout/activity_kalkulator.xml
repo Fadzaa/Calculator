@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Kalkulator">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/numberText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="32dp"
+            android:textColor="#304155"
+            android:paddingTop="48dp"
+            android:paddingLeft="33dp"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="63dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/numberText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aritmatika"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="32dp"
+        android:paddingLeft="33dp"
+        android:textColor="#304155"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="43dp"/>
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Number 1"
+        android:textColorHint="#CC304155"
+        android:layout_gravity="center"
+        android:background="@drawable/round_number"
+        android:paddingLeft="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp"/>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Number 2"
+        android:textColorHint="#CC304155"
+        android:layout_gravity="center"
+        android:background="@drawable/round_number"
+        android:paddingLeft="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="36dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="111dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_operator"
+            android:drawableTop="@drawable/ic_plus"
+            android:drawablePadding="10dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="111dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_operator"
+            android:drawableTop="@drawable/ic_minus"
+            android:drawablePadding="10dp"
+            android:paddingTop="38dp"
+            android:gravity="center">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="33dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/multipleButton"
+            android:layout_width="111dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_operator"
+            android:drawableTop="@drawable/ic_multiple"
+            android:drawablePadding="10dp"
+            android:paddingTop="17dp"
+            android:gravity="center">
+
+        </Button>
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="111dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_operator"
+            android:drawableTop="@drawable/ic_division"
+            android:drawablePadding="10dp"
+            android:paddingTop="13dp"
+            android:gravity="center">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_wave_reverse"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
